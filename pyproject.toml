@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "pinboard-summarize"
+version = "0.1.0"
+description = "Uses OpenAI to summarize and generate tags for a website and then add the website with the tags and summary to pinboard"
+authors = ["soleblaze <soleblaze@skyshadows.net>"]
+readme = "README.md"
+package-mode = true
+
+[tool.poetry.dependencies]
+python = "^3.12"
+openai = "^1.23.6"
+pinboard = "^2.1.9"
+beautifulsoup4 = "^4.12.3"
+requests = "^2.31.0"
+html2text = "^2024.2.26"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+pinboard-summarize = 'pinboard_summarize:main'
+

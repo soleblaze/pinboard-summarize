@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+if [ "$1" = "add" ]; then
+	shift 1
+	echo "message-info \"Pinboard - Saving: ${QUTE_URL[0,60]}...\"" >> "$QUTE_FIFO"
+	pinboard-summarize "$QUTE_URL"
+elif [ "$1" = "readLater" ]; then
+	shift 1
+	echo "message-info \"Read Later Saving is not currently implemented\"" >> "$QUTE_FIFO"
+fi
