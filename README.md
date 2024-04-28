@@ -9,3 +9,5 @@ TODO:
 - Handle youtube
 - Handle pdfs
 - Handle GitHub
+- Iterate through pinboard bookmarks and add descriptions for entries that do not have them
+- Provide a list of acceptable tags
