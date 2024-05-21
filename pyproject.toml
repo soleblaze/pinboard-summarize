@@ -11,7 +11,7 @@ python = "^3.12"
 openai = "^1.23.6"
 pinboard = "^2.1.9"
 beautifulsoup4 = "^4.12.3"
-requests = "^2.31.0"
+requests = "^2.32.0"
 html2text = "^2024.2.26"
 
 [tool.poetry.group.dev.dependencies]
